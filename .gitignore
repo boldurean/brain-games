@@ -13,6 +13,7 @@
 # Generated files
 .idea/**/contentModel.xml
 
+
 # Sensitive or high-churn files
 .idea/**/dataSources/
 .idea/**/dataSources.ids
@@ -101,3 +102,4 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
+/node_modules/
