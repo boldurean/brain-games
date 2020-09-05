@@ -21,7 +21,7 @@ const brainEven = () => {
         console.log('Correct!');
         counter += 1;
       } else {
-        console.log(`"${question}" is wrong answer ;( Correct answer was "yes".\nLet's try again, ${userName}!`);
+        return console.log(`"${question}" is wrong answer ;( Correct answer was "yes".\nLet's try again, ${userName}!`);
       }
     }
     if (number % 2 !== 0) {
@@ -29,12 +29,13 @@ const brainEven = () => {
         console.log('Correct!');
         counter += 1;
       } else {
-        console.log(`"${question}" is wrong answer ;( Correct answer was "no".\nLet's try again, ${userName}!`);
+        return console.log(`"${question}" is wrong answer ;( Correct answer was "no".\nLet's try again, ${userName}!`);
       }
     }
   }
   if (counter === 3) {
-    console.log(`Congratulations, ${userName}!`);
+    return console.log(`Congratulations, ${userName}!`);
   }
+  return false;
 };
 brainEven();
