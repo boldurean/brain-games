@@ -2,5 +2,4 @@
 
 <a href="https://codeclimate.com/github/codeclimate/codeclimate/maintainability"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a> ![Node CI](https://github.com/vsbdn/frontend-project-lvl1/workflows/Node%20CI/badge.svg)
 
-
-Brain-even: https://asciinema.org/a/fOS1EZNkrkMXc9N67qGdPj5PT
+brain-even game: https://asciinema.org/a/enU3nfD1odTesM3GcCRwe0HXVhttps://asciinema.org/a/fOS1EZNkrkMXc9N67qGdPj5PT
