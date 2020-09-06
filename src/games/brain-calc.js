@@ -7,7 +7,7 @@ const getQuestionAndAnswer = () => {
   const num1 = getRandomNum(1, 100);
   const num2 = getRandomNum(1, 100);
   const operators = ['+', '-', '*'];
-  const randomIndex = Math.floor(Math.random() * (operators.length - 1));
+  const randomIndex = getRandomNum(0, operators.length - 1);
   const randomOperator = operators[randomIndex];
   switch (randomOperator) {
     case '+':
