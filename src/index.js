@@ -1,15 +1,25 @@
-import readlineSync from 'readline-sync';
+import { log, question } from './cli.js';
 
-export const getRightAnswer = (userAnswer, correctAnswer, userName) => console.log(`"${userAnswer}" is wrong answer ;( Correct answer was "${correctAnswer}".\nLet's try again, ${userName}!`);
-
-export const welcomeMessage = (message = 'Welcome to the Brain Games!') => console.log(message);
-
-export const greeting = (userName) => console.log(`Hi ${userName}!`);
-
-export const question = (expression) => readlineSync.question(`Question: ${expression}\nYour answer: `);
-
-export const getNumbers = (num1, num2, num3) => {
-  const numbers = [];
-  numbers.push(num1, num2, num3);
-  return numbers;
+const startGame = (rules, getQuestionAndAnswer) => {
+  log('Welcome to brain games! ');
+  const userName = question('May I have your name? ');
+  log(`Hi ${userName}!`);
+  log(rules);
+  let rounds = 0;
+  while (rounds < 3) {
+    const questionAndAnswer = getQuestionAndAnswer();
+    log(`Question: ${questionAndAnswer[0]}`);
+    const userAnswer = question('Your answer: ');
+    if (userAnswer === questionAndAnswer[1]) {
+      log('Correct!');
+      rounds += 1;
+    } else {
+      log(`"${userAnswer}" is not correct, correct answer was "${questionAndAnswer[1]}"`);
+      log(`Let's try again, ${userName}`);
+      return;
+    }
+  }
+  log(`Congratulations, ${userName}!`);
 };
+
+export default startGame;
