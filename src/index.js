@@ -14,7 +14,7 @@ const startGame = (rules, getQuestionAndAnswer) => {
       log('Correct!');
       rounds += 1;
     } else {
-      log(`"${userAnswer}" is not correct, correct answer was "${questionAndAnswer[1]}"`);
+      log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${questionAndAnswer[1]}"`);
       log(`Let's try again, ${userName}`);
       return;
     }
