@@ -3,7 +3,7 @@
 
 <a href="https://codeclimate.com/github/codeclimate/codeclimate/maintainability"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a> ![Node CI](https://github.com/vsbdn/frontend-project-lvl1/workflows/Node%20CI/badge.svg)
 
-###To play: 
+### To play: 
 * `Download` and install the package.
 * `Run` games in CLI.
 
