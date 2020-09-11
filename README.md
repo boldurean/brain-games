@@ -8,17 +8,17 @@ Brain-games is a small collection of arithmetic console games.
 To use it make sure to install all dependencies and follow instructions bellow.
 
 
-###Install: 
+### Install: 
 * `$ make install`
 
-###Games: 
+### Games: 
 * Brain-even
 * Brain-calc
 * Brain-gcd
 * Brain-progression
 * Brain-prime
 
-###Run: 
+### Run: 
 `$ make brain-even`
  
 [![asciicast](https://asciinema.org/a/enU3nfD1odTesM3GcCRwe0HXV.svg)](https://asciinema.org/a/enU3nfD1odTesM3GcCRwe0HXV)
