@@ -1,25 +1,28 @@
-import { log, question } from './cli.js';
+import { print, askQuestion } from './cli.js';
 
-const startGame = (rules, getQuestionAndAnswer) => {
-  log('Welcome to brain games! ');
-  const userName = question('May I have your name? ');
-  log(`Hi ${userName}!`);
-  log(rules);
-  let rounds = 0;
-  while (rounds < 3) {
+const flow = (rule, getQuestionAndAnswer) => {
+  print('Welcome to brain games! ');
+  const userName = askQuestion('May I have your name? ');
+  print(`Hi ${userName}!`);
+  print(rule);
+  const rounds = 3;
+  let questionsAsked = 0;
+  while (questionsAsked < rounds) {
     const questionAndAnswer = getQuestionAndAnswer();
-    log(`Question: ${questionAndAnswer[0]}`);
-    const userAnswer = question('Your answer: ');
-    if (userAnswer === questionAndAnswer[1]) {
-      log('Correct!');
-      rounds += 1;
+    const askedQuestion = questionAndAnswer[0];
+    const correctAnswer = questionAndAnswer[1];
+    print(`Question: ${askedQuestion}`);
+    const userAnswer = askQuestion('Your answer: ');
+    if (userAnswer === correctAnswer) {
+      print('Correct!');
+      questionsAsked += 1;
     } else {
-      log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${questionAndAnswer[1]}"`);
-      log(`Let's try again, ${userName}`);
+      print(`"${userAnswer}" is wrong answer ;(. Correct answer was "${correctAnswer}"`);
+      print(`Let's try again, ${userName}`);
       return;
     }
   }
-  log(`Congratulations, ${userName}!`);
+  print(`Congratulations, ${userName}!`);
 };
 
-export default startGame;
+export default flow;

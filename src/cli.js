@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
 
-export const log = (message) => console.log(message);
+export const print = (message) => console.log(message);
 
-export const question = (message) => readlineSync.question(message);
+export const askQuestion = (question) => readlineSync.question(question);
