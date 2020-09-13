@@ -22,6 +22,7 @@ To use it make sure to install all dependencies and follow instructions bellow.
 `$ make brain-even`
  
 [![asciicast](https://asciinema.org/a/731hp9sATNRFu6OVT2dIY1V3K.svg)](https://asciinema.org/a/731hp9sATNRFu6OVT2dIY1V3K)
+
 `$ make brain-calc`
 
 [![asciicast](https://asciinema.org/a/eS5vRehSsWk4vESV3W9X0dMQk.svg)](https://asciinema.org/a/eS5vRehSsWk4vESV3W9X0dMQk)
