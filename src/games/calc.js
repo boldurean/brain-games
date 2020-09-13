@@ -13,16 +13,17 @@ const getCorrectAnswer = (num1, operator, num2) => {
     case '*':
       return num1 * num2;
     default:
-      return null;
+      throw new Error(`Unknown case: "${operator}"!`);
   }
 };
 
 const getQuestionAndAnswer = () => {
-  const randomOperatorIndex = operators[getRandomNum(0, operators.length - 1)];
-  const [num1, operator, num2] = [getRandomNum(1, 100), randomOperatorIndex, getRandomNum(1, 100)];
+  const randomOperator = operators[getRandomNum(0, operators.length - 1)];
+  const num1 = getRandomNum(1, 100);
+  const num2 = getRandomNum(1, 100);
 
-  const question = `${num1} ${randomOperatorIndex} ${num2}`;
-  const answer = String(getCorrectAnswer(num1, operator, num2));
+  const question = `${num1} ${randomOperator} ${num2}`;
+  const answer = String(getCorrectAnswer(num1, randomOperator, num2));
   return [question, answer];
 };
 

@@ -12,14 +12,14 @@ const isPrime = (number) => {
   return true;
 };
 
-const getAnswerAndQuestion = () => {
+const getQuestionAndAnswer = () => {
   const question = getRandomNum(1, 100);
   const answer = isPrime(question) ? 'yes' : 'no';
   return [question, answer];
 };
 
 const brainPrime = () => {
-  flow(gameRule, getAnswerAndQuestion);
+  flow(gameRule, getQuestionAndAnswer);
 };
 
 export default brainPrime;
