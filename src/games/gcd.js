@@ -16,8 +16,8 @@ const getQuestionAndAnswer = () => {
   return [question, answer];
 };
 
-const brainGCD = () => {
+const gcd = () => {
   flow(gameRule, getQuestionAndAnswer);
 };
 
-export default brainGCD;
+export default gcd;

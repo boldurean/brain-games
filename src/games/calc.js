@@ -27,8 +27,8 @@ const getQuestionAndAnswer = () => {
   return [question, answer];
 };
 
-const brainCalc = () => {
+const calc = () => {
   flow(gameRule, getQuestionAndAnswer);
 };
 
-export default brainCalc;
+export default calc;

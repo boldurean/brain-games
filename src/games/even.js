@@ -11,8 +11,8 @@ const getQuestionAndAnswer = () => {
   return [question, answer];
 };
 
-const brainEven = () => {
+const even = () => {
   flow(gameRule, getQuestionAndAnswer);
 };
 
-export default brainEven;
+export default even;

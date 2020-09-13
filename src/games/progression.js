@@ -3,28 +3,31 @@ import { getRandomNum } from '../utilities.js';
 
 const gameRule = 'What number is missing in the progression?';
 
-const getProgression = (steps) => {
+const getProgression = (startingNumber, hiddenIndex, step) => {
   const progressionLength = 10;
-  const startingNumber = getRandomNum(1, 50);
-  const hiddenNumber = getRandomNum(1, 9);
-
   const progression = [];
 
   for (let i = 0; i < progressionLength; i += 1) {
-    progression.push(startingNumber + i * steps);
+    progression.push(startingNumber + i * step);
   }
-  const answer = String(progression[hiddenNumber]);
-  progression[hiddenNumber] = '..';
+  progression[hiddenIndex] = '..';
 
-  const question = progression.join(' ');
+  return progression.join(' ');
+};
+
+const getQuestionAndAnswer = () =>  {
+  const startingNumber = getRandomNum(1, 50);
+  const hiddenIndex = getRandomNum(1, 9);
+  const step = getRandomNum(1, 5);
+
+  const question = getProgression(startingNumber, hiddenIndex, step);
+  const answer = String(startingNumber + hiddenIndex * step);
 
   return [question, answer];
 };
 
-const getQuestionAndAnswer = () => getProgression(getRandomNum(1, 5));
-
-const brainProgression = () => {
+const progression = () => {
   flow(gameRule, getQuestionAndAnswer);
 };
 
-export default brainProgression;
+export default progression;
