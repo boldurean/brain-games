@@ -15,7 +15,7 @@ const getProgression = (startingNumber, hiddenIndex, step) => {
   return progression.join(' ');
 };
 
-const getQuestionAndAnswer = () =>  {
+const getQuestionAndAnswer = () => {
   const startingNumber = getRandomNum(1, 50);
   const hiddenIndex = getRandomNum(1, 9);
   const step = getRandomNum(1, 5);
