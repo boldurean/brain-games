@@ -1,4 +1,4 @@
-import flow from '../index.js';
+import runGame from '../index.js';
 import { getRandomNum } from '../utilities.js';
 
 const gameRule = 'Find the greatest common divisor of given numbers.';
@@ -16,8 +16,8 @@ const getQuestionAndAnswer = () => {
   return [question, answer];
 };
 
-const gcd = () => {
-  flow(gameRule, getQuestionAndAnswer);
+const runGcd = () => {
+  runGame(gameRule, getQuestionAndAnswer);
 };
 
-export default gcd;
+export default runGcd;

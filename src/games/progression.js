@@ -1,33 +1,35 @@
-import flow from '../index.js';
+import runGame from '../index.js';
 import { getRandomNum } from '../utilities.js';
 
 const gameRule = 'What number is missing in the progression?';
 
-const getProgression = (startingNumber, hiddenIndex, step) => {
-  const progressionLength = 10;
+const progressionLength = 10;
+
+const getProgression = (startingNumber, length, step) => {
   const progression = [];
 
-  for (let i = 0; i < progressionLength; i += 1) {
+  for (let i = 0; i < length; i += 1) {
     progression.push(startingNumber + i * step);
   }
-  progression[hiddenIndex] = '..';
 
-  return progression.join(' ');
+  return progression;
 };
 
 const getQuestionAndAnswer = () => {
   const startingNumber = getRandomNum(1, 50);
-  const hiddenIndex = getRandomNum(1, 9);
+  const hiddenIndex = getRandomNum(1, progressionLength - 1);
   const step = getRandomNum(1, 5);
 
-  const question = getProgression(startingNumber, hiddenIndex, step);
+  const progression = getProgression(startingNumber, progressionLength, step);
+  progression[hiddenIndex] = '..';
+  const question = progression.join(' ');
   const answer = String(startingNumber + hiddenIndex * step);
 
   return [question, answer];
 };
 
-const progression = () => {
-  flow(gameRule, getQuestionAndAnswer);
+const runProgression = () => {
+  runGame(gameRule, getQuestionAndAnswer);
 };
 
-export default progression;
+export default runProgression;

@@ -1,4 +1,4 @@
-import flow from '../index.js';
+import runGame from '../index.js';
 import { getRandomNum } from '../utilities.js';
 
 const gameRule = 'What is the result of expression?';
@@ -27,8 +27,8 @@ const getQuestionAndAnswer = () => {
   return [question, answer];
 };
 
-const calc = () => {
-  flow(gameRule, getQuestionAndAnswer);
+const runCalc = () => {
+  runGame(gameRule, getQuestionAndAnswer);
 };
 
-export default calc;
+export default runCalc;

@@ -1,7 +1,7 @@
-import flow from '../index.js';
+import runGame from '../index.js';
 import { getRandomNum } from '../utilities.js';
 
-const gameRule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+const gameRule = 'Answer "yes" if given number is runPrime. Otherwise answer "no".';
 
 const isPrime = (number) => {
   if (number < 2) {
@@ -21,8 +21,8 @@ const getQuestionAndAnswer = () => {
   return [question, answer];
 };
 
-const prime = () => {
-  flow(gameRule, getQuestionAndAnswer);
+const runPrime = () => {
+  runGame(gameRule, getQuestionAndAnswer);
 };
 
-export default prime;
+export default runPrime;

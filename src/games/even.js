@@ -1,4 +1,4 @@
-import flow from '../index.js';
+import runGame from '../index.js';
 import { getRandomNum } from '../utilities.js';
 
 const gameRule = 'Answer "yes" if the number is even, otherwise answer "no".';
@@ -11,8 +11,8 @@ const getQuestionAndAnswer = () => {
   return [question, answer];
 };
 
-const even = () => {
-  flow(gameRule, getQuestionAndAnswer);
+const runEven = () => {
+  runGame(gameRule, getQuestionAndAnswer);
 };
 
-export default even;
+export default runEven;

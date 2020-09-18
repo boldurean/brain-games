@@ -1,7 +1,7 @@
 # Frontend-project: Brain Games 
 
 
-<a href="https://codeclimate.com/github/codeclimate/codeclimate/maintainability"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a> ![Node CI](https://github.com/vsbdn/frontend-project-lvl1/workflows/Node%20CI/badge.svg)
+[![Maintainability](https://api.codeclimate.com/v1/badges/5b9a7ed38b1c05ac4bc3/maintainability)](https://codeclimate.com/github/vsbdn/frontend-project-lvl1/maintainability) ![Node CI](https://github.com/vsbdn/frontend-project-lvl1/workflows/Node%20CI/badge.svg?branch=master&event=project)
 
 Brain-games is a small collection of arithmetic console games. 
 
@@ -18,15 +18,15 @@ To use it make sure to install all dependencies and follow instructions bellow.
 #### Example
 [![asciicast](https://asciinema.org/a/731hp9sATNRFu6OVT2dIY1V3K.svg)](https://asciinema.org/a/731hp9sATNRFu6OVT2dIY1V3K)
 
-### Brain calc
+### Brain runCalc
 #### Run 
-`$ make brain-calc`
+`$ make brain-runCalc`
 #### Example
 [![asciicast](https://asciinema.org/a/eS5vRehSsWk4vESV3W9X0dMQk.svg)](https://asciinema.org/a/eS5vRehSsWk4vESV3W9X0dMQk)
 
-### Brain gcd
+### Brain runGcd
 #### Run
-`$ make brain-gcd`
+`$ make brain-runGcd`
 #### Example
 [![asciicast](https://asciinema.org/a/fRSLklRvNtCKpYsHw6HOPs7nj.svg)](https://asciinema.org/a/fRSLklRvNtCKpYsHw6HOPs7nj)
 
@@ -35,8 +35,8 @@ To use it make sure to install all dependencies and follow instructions bellow.
 `$ make brain-prigression`
 #### Example
 [![asciicast](https://asciinema.org/a/CucgR3Qhr1HC4dP3HzLtEseAO.svg)](https://asciinema.org/a/CucgR3Qhr1HC4dP3HzLtEseAO)
-### Brain prime
+### Brain runPrime
 ### Run
-`$ make brain-prime`
+`$ make brain-runPrime`
 ### Example
 [![asciicast](https://asciinema.org/a/MqHnOacjnfBHIHkKOLERqu56C.svg)](https://asciinema.org/a/MqHnOacjnfBHIHkKOLERqu56C)
