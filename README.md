@@ -1,7 +1,7 @@
 # Frontend-project: Brain Games 
 
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/5b9a7ed38b1c05ac4bc3/maintainability)](https://codeclimate.com/github/vsbdn/frontend-project-lvl1/maintainability) ![Node CI](https://github.com/vsbdn/frontend-project-lvl1/workflows/Node%20CI/badge.svg?branch=master&event=project)
+[![Maintainability](https://api.codeclimate.com/v1/badges/5b9a7ed38b1c05ac4bc3/maintainability)](https://codeclimate.com/github/vsbdn/frontend-project-lvl1/maintainability) [![github action status](https://github.com/vsbdn/frontend-project-lvl1/workflows/Node%20CI/badge.svg)](https://github.com/vsbdn/frontend-project-lvl1/actions)
 
 Brain-games is a small collection of arithmetic console games. 
 
