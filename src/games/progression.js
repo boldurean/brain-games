@@ -19,7 +19,6 @@ const getQuestionAndAnswer = () => {
   const startingNumber = getRandomNum(1, 50);
   const hiddenIndex = getRandomNum(1, progressionLength - 1);
   const step = getRandomNum(1, 5);
-
   const progression = getProgression(startingNumber, progressionLength, step);
   progression[hiddenIndex] = '..';
   const question = progression.join(' ');
