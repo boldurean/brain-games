@@ -18,13 +18,13 @@ To use it make sure to install all dependencies and follow instructions bellow.
 #### Example
 [![asciicast](https://asciinema.org/a/731hp9sATNRFu6OVT2dIY1V3K.svg)](https://asciinema.org/a/731hp9sATNRFu6OVT2dIY1V3K)
 
-### Brain runCalc
+### Brain calc
 #### Run 
 `$ make brain-runCalc`
 #### Example
 [![asciicast](https://asciinema.org/a/eS5vRehSsWk4vESV3W9X0dMQk.svg)](https://asciinema.org/a/eS5vRehSsWk4vESV3W9X0dMQk)
 
-### Brain runGcd
+### Brain gcd
 #### Run
 `$ make brain-runGcd`
 #### Example
@@ -35,7 +35,7 @@ To use it make sure to install all dependencies and follow instructions bellow.
 `$ make brain-prigression`
 #### Example
 [![asciicast](https://asciinema.org/a/CucgR3Qhr1HC4dP3HzLtEseAO.svg)](https://asciinema.org/a/CucgR3Qhr1HC4dP3HzLtEseAO)
-### Brain runPrime
+### Brain prime
 ### Run
 `$ make brain-runPrime`
 ### Example
