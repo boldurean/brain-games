@@ -20,23 +20,23 @@ To use it make sure to install all dependencies and follow instructions bellow.
 
 ### Brain calc
 #### Run 
-`$ make brain-runCalc`
+`$ make brain-calc`
 #### Example
 [![asciicast](https://asciinema.org/a/eS5vRehSsWk4vESV3W9X0dMQk.svg)](https://asciinema.org/a/eS5vRehSsWk4vESV3W9X0dMQk)
 
 ### Brain gcd
 #### Run
-`$ make brain-runGcd`
+`$ make brain-gcd`
 #### Example
 [![asciicast](https://asciinema.org/a/fRSLklRvNtCKpYsHw6HOPs7nj.svg)](https://asciinema.org/a/fRSLklRvNtCKpYsHw6HOPs7nj)
 
 ### Brain progression
 #### Run
-`$ make brain-prigression`
+`$ make brain-progression`
 #### Example
 [![asciicast](https://asciinema.org/a/CucgR3Qhr1HC4dP3HzLtEseAO.svg)](https://asciinema.org/a/CucgR3Qhr1HC4dP3HzLtEseAO)
 ### Brain prime
 ### Run
-`$ make brain-runPrime`
+`$ make brain-prime`
 ### Example
 [![asciicast](https://asciinema.org/a/MqHnOacjnfBHIHkKOLERqu56C.svg)](https://asciinema.org/a/MqHnOacjnfBHIHkKOLERqu56C)
